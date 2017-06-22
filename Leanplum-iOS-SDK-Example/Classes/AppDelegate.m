@@ -56,11 +56,11 @@
 }
 
 - (void)configureLeanplum {
-    if (DEBUG) {
+    #ifdef DEBUG
         [Leanplum setAppId:LP_APP_ID withDevelopmentKey:LP_DEVELOPMENT_KEY];
-    } else {
+    #else
         [Leanplum setAppId:LP_APP_ID withProductionKey:LP_PRODUCTION_KEY];
-    }
+    #endif
     [Leanplum trackAllAppScreens];
     [Leanplum start];
 }
