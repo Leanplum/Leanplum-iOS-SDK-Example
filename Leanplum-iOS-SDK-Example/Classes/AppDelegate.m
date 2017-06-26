@@ -55,7 +55,7 @@
     
 }
 
-- (void)configureLeanplum {
+- (void)configureLeanplum {    
     #ifdef DEBUG
         [Leanplum setAppId:LP_APP_ID withDevelopmentKey:LP_DEVELOPMENT_KEY];
     #else

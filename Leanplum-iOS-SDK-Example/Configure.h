@@ -1,4 +1,4 @@
-// Copyright 2017, Leanplum, Inc.
+// Copyright 2017 Leanplum, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
 #define LP_PRODUCTION_KEY @"prod_A1c7DfHO6XTo2BRwzhkkXKFJ6oaPtoMnRA9xpPSlx74"
 #define LP_DEVELOPMENT_KEY @"dev_Bx8i3Bbz1OJBTBAu63NIifr3UwWqUBU5OhHtywo58RY"
 
-#define LP_API_HOST_NAME @"www.leanplum.com"
-#define LP_API_SSL true
+#define LP_API_HOST_NAME @"127.0.0.1:3000"
+#define LP_API_SSL false
 
 #define LP_SOCKET_HOST_NAME @"dev.leanplum.com"
 #define LP_SOCKET_PORT 443
