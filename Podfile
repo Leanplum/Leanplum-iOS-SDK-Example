@@ -13,9 +13,9 @@ target 'Leanplum-iOS-SDK-Example' do
             print("Installing Leanplum using SOURCES/DYNAMIC\n")
             use_frameworks!
         end
-        pod 'Leanplum-iOS-SDK-source', :path => '../../Leanplum-iOS-SDK/'
-        pod 'Leanplum-iOS-Location-source', :path => '../../Leanplum-iOS-Location'
-        pod 'Leanplum-iOS-UIEditor', :path => '../../Leanplum-iOS-UIEditor-source'
+        pod 'Leanplum-iOS-SDK-source', :path => '../Leanplum-iOS-SDK/'
+        pod 'Leanplum-iOS-Location-source', :path => '../Leanplum-iOS-Location'
+        pod 'Leanplum-iOS-UIEditor', :path => '../Leanplum-iOS-UIEditor-source'
         else
         if ENV['LP_STATIC']
             print("Installing Leanplum using PACKAGED/STATIC\n")

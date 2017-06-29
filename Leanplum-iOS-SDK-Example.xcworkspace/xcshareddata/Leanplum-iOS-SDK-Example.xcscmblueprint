@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B4DCC70B5054BCF4C15D9C685DB5A844BF6CAC65",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B1608B45216904A28B1EDCAD9931D822FDB058C9" : 9223372036854775807,
+    "81618980A0439020CEAC6DAEE4AC3241C2C9C76E" : 9223372036854775807,
+    "01997177D1606B9D0F0EE2EE9E247B51C13A514B" : 9223372036854775807,
+    "B4DCC70B5054BCF4C15D9C685DB5A844BF6CAC65" : 9223372036854775807,
+    "E656D7A1371153A68B33B9FA35B8C6F69717CE45" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FDB36B55-A2AB-40E5-8064-DB8A218604C2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B1608B45216904A28B1EDCAD9931D822FDB058C9" : "Leanplum-iOS-Location\/",
+    "81618980A0439020CEAC6DAEE4AC3241C2C9C76E" : "Leanplum-iOS-UIEditor-source\/",
+    "01997177D1606B9D0F0EE2EE9E247B51C13A514B" : "..",
+    "B4DCC70B5054BCF4C15D9C685DB5A844BF6CAC65" : "Leanplum-iOS-SDK-Example\/",
+    "E656D7A1371153A68B33B9FA35B8C6F69717CE45" : "Leanplum-iOS-SDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Leanplum-iOS-SDK-Example",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Leanplum-iOS-SDK-Example.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Leanplum\/SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01997177D1606B9D0F0EE2EE9E247B51C13A514B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Leanplum\/Leanplum-iOS-UIEditor-source.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81618980A0439020CEAC6DAEE4AC3241C2C9C76E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Leanplum\/Leanplum-iOS-Location.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B1608B45216904A28B1EDCAD9931D822FDB058C9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Leanplum\/Leanplum-iOS-SDK-Example.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B4DCC70B5054BCF4C15D9C685DB5A844BF6CAC65"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Leanplum\/Leanplum-iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E656D7A1371153A68B33B9FA35B8C6F69717CE45"
+    }
+  ]
+}
