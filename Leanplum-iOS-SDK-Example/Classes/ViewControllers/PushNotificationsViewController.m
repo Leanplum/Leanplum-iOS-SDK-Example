@@ -31,4 +31,14 @@
     [Leanplum track:@"push_notification_example"];
 }
 
+- (IBAction)load_test:(UIButton *)sender {
+    for (unsigned int i = 0; i <= 10020; i++) {
+        [Leanplum track:@"load_test"];
+    }
+}
+
+- (IBAction)crash_app:(UIButton *)sender {
+    exit(0);
+}
+
 @end
