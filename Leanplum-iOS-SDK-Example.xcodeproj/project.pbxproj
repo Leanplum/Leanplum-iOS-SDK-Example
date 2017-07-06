@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07DAADF41E78380D002A6878 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAADF31E78380D002A6878 /* main.m */; };
-		07DAADFD1E78380D002A6878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DAADFB1E78380D002A6878 /* Main.storyboard */; };
+		07DAADFD1E78380D002A6878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DAADFB1E78380D002A6878 /* Main.storyboard */; settings = {ASSET_TAGS = (Button, ); }; };
 		07DAADFF1E78380D002A6878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DAADFE1E78380D002A6878 /* Assets.xcassets */; };
 		07DAAE021E78380D002A6878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DAAE001E78380D002A6878 /* LaunchScreen.storyboard */; };
 		07DAAE0F1E783AFE002A6878 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE0B1E783AFE002A6878 /* AppDelegate.m */; };
@@ -202,6 +202,9 @@
 		07DAADE71E78380D002A6878 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Button,
+				);
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Leanplum;
 				TargetAttributes = {
