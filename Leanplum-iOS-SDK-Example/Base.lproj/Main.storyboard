@@ -101,6 +101,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oan-6T-JMM">
                                 <rect key="frame" x="151" y="528" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
                                 <state key="normal" title="Crash App"/>
                                 <connections>
                                     <action selector="crash_app:" destination="Pxf-gc-O47" eventType="touchUpInside" id="Xz8-R2-mDK"/>
