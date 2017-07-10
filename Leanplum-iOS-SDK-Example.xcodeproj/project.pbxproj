@@ -20,6 +20,7 @@
 		07DAAE251E78499B002A6878 /* ABTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE241E78499B002A6878 /* ABTestViewController.m */; };
 		07DAAE281E7849A9002A6878 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE271E7849A9002A6878 /* PreviewViewController.m */; };
 		182A60D000B1E0571923C438 /* Pods_Leanplum_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD934A55A04FD177BC74536 /* Pods_Leanplum_iOS_SDK_Example.framework */; };
+		68C9A5B11F143972000DFA1B /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9A5B01F143972000DFA1B /* TestingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		07DAAE241E78499B002A6878 /* ABTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABTestViewController.m; sourceTree = "<group>"; };
 		07DAAE261E7849A9002A6878 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
 		07DAAE271E7849A9002A6878 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		68C9A5AF1F143832000DFA1B /* TestingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingViewController.h; sourceTree = "<group>"; };
+		68C9A5B01F143972000DFA1B /* TestingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; };
 		6BA601E55706F3BB005C5C1B /* Pods-Leanplum-iOS-SDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; sourceTree = "<group>"; };
 		85FA4B8F8C062203CB2D40D9 /* Pods_Leanplum-iOS-SDK-Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Leanplum-iOS-SDK-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B08F63A7C696E6E6D7DA7A /* Pods-Leanplum-iOS-SDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				07DAAE241E78499B002A6878 /* ABTestViewController.m */,
 				07DAAE261E7849A9002A6878 /* PreviewViewController.h */,
 				07DAAE271E7849A9002A6878 /* PreviewViewController.m */,
+				68C9A5AF1F143832000DFA1B /* TestingViewController.h */,
+				68C9A5B01F143972000DFA1B /* TestingViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				07DAAE161E784744002A6878 /* Constants.m in Sources */,
 				07DAAE1C1E784925002A6878 /* PushNotificationsViewController.m in Sources */,
 				07DAAE221E784992002A6878 /* InAppMessagesViewController.m in Sources */,
+				68C9A5B11F143972000DFA1B /* TestingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

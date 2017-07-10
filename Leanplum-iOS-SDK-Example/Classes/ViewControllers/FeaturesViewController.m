@@ -61,6 +61,10 @@
                     @{
                         @"item" : @"A/B Test",
                         @"count": @0
+                        },
+                    @{
+                        @"item" : @"Testing",
+                        @"count" : @0
                         }
                     ];
 }
@@ -105,6 +109,9 @@
             break;
         case 3:
             identifier = @"app_inbox_view_controller";
+            break;
+        case 4:
+            identifier = @"testing_view_controller";
             break;
         default:
             break;

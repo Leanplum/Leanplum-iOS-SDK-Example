@@ -89,24 +89,6 @@
                                     <action selector="onButtonClicked:" destination="Pxf-gc-O47" eventType="touchUpInside" id="OSR-FM-cjQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S84-zx-hNX">
-                                <rect key="frame" x="149" y="566" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
-                                <state key="normal" title="Load Test"/>
-                                <connections>
-                                    <action selector="load_test:" destination="Pxf-gc-O47" eventType="touchUpInside" id="Xcy-h3-pcN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oan-6T-JMM">
-                                <rect key="frame" x="151" y="528" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
-                                <state key="normal" title="Crash App"/>
-                                <connections>
-                                    <action selector="crash_app:" destination="Pxf-gc-O47" eventType="touchUpInside" id="Xz8-R2-mDK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -302,6 +284,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CT7-4c-cgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="82" y="124"/>
+        </scene>
+        <!--Testing View Controller-->
+        <scene sceneID="gri-7a-R4W">
+            <objects>
+                <viewController storyboardIdentifier="testing_view_controller" id="hJP-Ff-9jp" customClass="TestingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aC8-79-cNB"/>
+                        <viewControllerLayoutGuide type="bottom" id="H5g-55-nKo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ePy-Wt-otq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oan-6T-JMM">
+                                <rect key="frame" x="165" y="532" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
+                                <state key="normal" title="Crash App"/>
+                                <connections>
+                                    <action selector="crash_app:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="zZY-fL-jwD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S84-zx-hNX">
+                                <rect key="frame" x="163" y="570" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <state key="normal" title="Load Test"/>
+                                <connections>
+                                    <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="nW6-tq-GeQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFK-Sv-uDf">
+                                <rect key="frame" x="161" y="608" width="81" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Track Event"/>
+                                <connections>
+                                    <action selector="track_event:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="e7Q-DQ-jFP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bi-wy-le7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-559.07046476761627"/>
         </scene>
     </scenes>
     <resources>

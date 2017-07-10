@@ -1,5 +1,13 @@
 //
-//  PushNotificationsViewController.m
+//  TestingViewController.h
+//  Leanplum-iOS-SDK-Example
+//
+//  Created by Sayaan Saha  on 7/10/17.
+//  Copyright © 2017 Leanplum. All rights reserved.
+//
+
+//
+//  TestingViewController.h
 //  Leanplum-iOS-SDK-Example
 //  Copyright © 2017 Leanplum.
 //
@@ -14,23 +22,8 @@
 //  limitations under the License.
 //
 
-#import "PushNotificationsViewController.h"
-#import <Leanplum/Leanplum.h>
+#import <UIKit/UIKit.h>
 
-@interface PushNotificationsViewController ()
-
-@end
-
-@implementation PushNotificationsViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
-- (IBAction)onButtonClicked:(UIButton *)sender {
-    [Leanplum track:@"push_notification_example"];
-}
-
-
+@interface TestingViewController : UIViewController
 
 @end
