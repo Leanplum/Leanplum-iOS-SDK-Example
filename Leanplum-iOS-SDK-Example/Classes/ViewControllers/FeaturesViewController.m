@@ -15,11 +15,12 @@
 //
 
 #import "FeaturesViewController.h"
+#import <Leanplum/Leanplum.h>
 
 @interface FeaturesViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSMutableArray* cells;
+@property NSArray* cells;
 
 @end
 
@@ -44,24 +45,24 @@
 }
 
 - (void)configure {
-    self.cells = [NSMutableArray new];
-    
-    [self.cells addObject:@{
-                            @"item" : @"Push Notifications",
-                            @"count": @0
-                            }];
-    [self.cells addObject:@{
-                            @"item" : @"In-app Messages",
-                            @"count": @0
-                            }];
-    [self.cells addObject:@{
-                            @"item" : @"App Inbox",
-                            @"count": @0
-                            }];
-    [self.cells addObject:@{
-                            @"item" : @"A/B Test",
-                            @"count": @0
-                            }];
+    self.cells = @[
+                    @{
+                       @"item" : @"Push Notifications",
+                       @"count": @0
+                       },
+                    @{
+                       @"item" : @"In-app Messages",
+                       @"count": @0
+                       },
+                    @{
+                        @"item" : @"App Inbox",
+                        @"count": @0
+                        },
+                    @{
+                        @"item" : @"A/B Test",
+                        @"count": @0
+                        }
+                    ];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
@@ -90,24 +91,27 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     UIViewController* viewController = nil;
+    NSString *identifier;
     
     switch (indexPath.row) {
         case 0:
-            viewController = [self.storyboard instantiateViewControllerWithIdentifier:
-                              @"push_notification_view_controller"];
+            identifier = @"push_notification_view_controller";
             break;
         case 1:
-            viewController = [self.storyboard instantiateViewControllerWithIdentifier:
-                              @"in_app_messages_view_controller"];
+            identifier = @"in_app_messages_view_controller";
             break;
         case 2:
-            viewController = [self.storyboard instantiateViewControllerWithIdentifier:
-                              @"app_inbox_view_controller"];
+            identifier = @"app_inbox_view_controller";
+            break;
+        case 3:
+            identifier = @"app_inbox_view_controller";
             break;
         default:
             break;
     }
+    viewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
     if (viewController != nil) {
+        [Leanplum advanceTo:identifier];
         [self.navigationController pushViewController:viewController animated:YES];
     }
 }
