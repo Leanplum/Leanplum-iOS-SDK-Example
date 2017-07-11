@@ -24,9 +24,13 @@
 }
 
 - (IBAction)load_test:(UIButton *)sender {
+    for (unsigned int i = 0; i < 10300; i++) {
+        [Leanplum track:[NSString stringWithFormat:@"%@%i", @"load_test", i]];
+    }
 }
 
 - (IBAction)track_event:(UIButton *)sender {
+    [Leanplum track:@"track_event"];
 }
 
 @end
