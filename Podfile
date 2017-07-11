@@ -9,20 +9,20 @@ target 'Leanplum-iOS-SDK-Example' do
     if ENV['LP_SOURCES']
         if ENV['LP_STATIC']
             print("Installing Leanplum using SOURCES/STATIC\n")
-            else
+        else
             print("Installing Leanplum using SOURCES/DYNAMIC\n")
             use_frameworks!
         end
         pod 'Leanplum-iOS-SDK-source', :path => '../Leanplum-iOS-SDK/'
         pod 'Leanplum-iOS-Location-source', :path => '../Leanplum-iOS-Location'
         pod 'Leanplum-iOS-UIEditor', :path => '../Leanplum-iOS-UIEditor-source'
-        else
+    else
         if ENV['LP_STATIC']
             print("Installing Leanplum using PACKAGED/STATIC\n")
             pod 'Leanplum-iOS-SDK-static', '= ' + LP_VERSION
             pod 'Leanplum-iOS-Location-static', '= ' + LP_VERSION
             pod 'Leanplum-iOS-UIEditor-static', '= ' + LP_VERSION
-            else
+        else
             print("Installing Leanplum using PACKAGED/DYNAMIC\n")
             use_frameworks!
             pod 'Leanplum-iOS-SDK', '= ' + LP_VERSION
@@ -38,7 +38,7 @@ target 'Leanplum-iOS-SDK-Example' do
             if ENV['LP_STATIC'] and ENV['LP_SOURCES']
                 config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
                 config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'STATIC=1'
-                elsif config.build_settings['GCC_PREPROCESSOR_DEFINITIONS']
+            elsif config.build_settings['GCC_PREPROCESSOR_DEFINITIONS']
                 config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'].clear
             end
         end

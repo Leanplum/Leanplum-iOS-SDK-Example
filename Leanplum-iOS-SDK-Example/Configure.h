@@ -12,12 +12,12 @@
 //
 // This is an auto generated file, expect changes to be overwritten.
 
-#define LP_APP_ID @"app_RgGE2Lxb0upQ8fRLGMK5PyXtEb5VajWIV4Qgol4nxwY"
-#define LP_PRODUCTION_KEY @"prod_8PWQsK0xZC4tuqgjXdZRZTTfOKPid5peYgdKrKgTNW8"
-#define LP_DEVELOPMENT_KEY @"dev_9DzAUa1TN9Gmqr4g8T6YO0pJxXeEkaeqU8Do4s0bBbw"
+#define LP_APP_ID @"app_BWTRIgOs0OoevDfSsBtabRiGffu5wOFU3mkxIxA7NBs"
+#define LP_PRODUCTION_KEY @"prod_A1c7DfHO6XTo2BRwzhkkXKFJ6oaPtoMnRA9xpPSlx74"
+#define LP_DEVELOPMENT_KEY @"dev_Bx8i3Bbz1OJBTBAu63NIifr3UwWqUBU5OhHtywo58RY"
 
-#define LP_API_HOST_NAME @"leanplum-qa-1372.appspot.com"
-#define LP_API_SSL true
+#define LP_API_HOST_NAME @"127.0.0.1:3000"
+#define LP_API_SSL false
 
-#define LP_SOCKET_HOST_NAME @"dev-qa.leanplum.com"
+#define LP_SOCKET_HOST_NAME @"dev.leanplum.com"
 #define LP_SOCKET_PORT 443
