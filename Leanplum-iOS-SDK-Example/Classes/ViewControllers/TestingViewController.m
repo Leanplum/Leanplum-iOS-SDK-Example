@@ -11,6 +11,8 @@
 
 @interface TestingViewController()
 
+@property (weak, nonatomic) IBOutlet UIButton *loadTestButton;
+
 @end
 
 @implementation TestingViewController
@@ -24,9 +26,15 @@
 }
 
 - (IBAction)load_test:(UIButton *)sender {
-    for (unsigned int i = 0; i < 10300; i++) {
-        [Leanplum track:[NSString stringWithFormat:@"%@%i", @"load_test", i]];
-    }
+    [_loadTestButton setTitle:@"Load Testing ..." forState:UIControlStateNormal];
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+        for (unsigned int i = 0; i < 10300; i++) {
+            [Leanplum track:[NSString stringWithFormat:@"%@%i", @"load_test", i]];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            [_loadTestButton setTitle:@"Load Test" forState:UIControlStateNormal];
+        });
+    });
 }
 
 - (IBAction)track_event:(UIButton *)sender {

@@ -307,7 +307,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S84-zx-hNX">
-                                <rect key="frame" x="147" y="570" width="77" height="30"/>
+                                <rect key="frame" x="91" y="570" width="193" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
                                 <state key="normal" title="Load Test"/>
@@ -330,6 +330,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="loadTestButton" destination="S84-zx-hNX" id="GMG-92-6xg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bi-wy-le7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
