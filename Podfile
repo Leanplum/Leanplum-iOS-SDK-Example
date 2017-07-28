@@ -1,5 +1,5 @@
 LP_VERSION = ENV['LP_VERSION'] ? ENV['LP_VERSION'] : '2.0.1'
-DEPLOYMENT_TARGET = ENV['LP_STATIC'] ? '6.0' : '8.0'
+DEPLOYMENT_TARGET = ENV['LP_STATIC'] ? '7.0' : '8.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Leanplum/CocoaPods.git'
