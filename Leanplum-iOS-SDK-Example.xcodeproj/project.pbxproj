@@ -439,7 +439,7 @@
 				);
 				INFOPLIST_FILE = "Leanplum-iOS-SDK-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leanplum.Leanplum-iOS-SDK-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leanplum.qaapp.2018";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -453,7 +453,7 @@
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
 				INFOPLIST_FILE = "Leanplum-iOS-SDK-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leanplum.Leanplum-iOS-SDK-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leanplum.qaapp.2018";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
