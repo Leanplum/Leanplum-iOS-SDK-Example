@@ -7,6 +7,7 @@
 //
 
 #import "TestingInAppViewController.h"
+#import "Leanplum.h"
 
 @interface TestingInAppViewController ()
 
@@ -24,14 +25,56 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)alertClicked:(id)sender {
+    [Leanplum track:@"alert"];
 }
-*/
+
+- (IBAction)centerPopupClicked:(id)sender {
+    [Leanplum track:@"center_popup"];
+}
+
+- (IBAction)confirmClicked:(id)sender {
+    [Leanplum track:@"confirm"];
+}
+
+- (IBAction)interstitialClicked:(id)sender {
+    [Leanplum track:@"interstitial"];
+}
+
+- (IBAction)webInterstitialClicked:(id)sender {
+    [Leanplum track:@"web_interstitial"];
+}
+
+- (IBAction)openUrlClicked:(id)sender {
+    [Leanplum track:@"open_url"];
+}
+
+- (IBAction)bannerClicked:(id)sender {
+    [Leanplum track:@"banner"];
+}
+
+- (IBAction)richInterstitialClicked:(id)sender {
+    [Leanplum track:@"rich_interstitial"];
+}
+
+- (IBAction)starRatingClicked:(id)sender {
+    [Leanplum track:@"star_rating"];
+}
+
+- (IBAction)chainToExistingClicked:(id)sender {
+    [Leanplum track:@"chain_to_existing"];
+}
+
+- (IBAction)chainToNewClicked:(id)sender {
+    [Leanplum track:@"chain_to_new"];
+}
+
+- (IBAction)limitSessionClicked:(id)sender {
+    [Leanplum track:@"limit_session"];
+}
+
+- (IBAction)limitLifetimeClicked:(id)sender {
+    [Leanplum track:@"limit_lifetime"];
+}
 
 @end

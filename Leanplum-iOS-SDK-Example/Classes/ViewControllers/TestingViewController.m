@@ -33,8 +33,8 @@
             [Leanplum track:[NSString stringWithFormat:@"%@%i", @"load_test", i]];
         }
         dispatch_async(dispatch_get_main_queue(), ^(void){
-            [_loadTestButton setTitle:@"Load Test" forState:UIControlStateNormal];
-            [_loadTestButton setEnabled:YES];
+            [self.loadTestButton setTitle:@"Load Test" forState:UIControlStateNormal];
+            [self.loadTestButton setEnabled:YES];
         });
     });
 }

@@ -7,6 +7,7 @@
 //
 
 #import "TestingPushViewController.h"
+#import "Leanplum.h"
 
 @interface TestingPushViewController ()
 
@@ -24,14 +25,52 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)pushClicked:(id)sender {
+    [Leanplum track:@"Send_push"];
 }
-*/
+
+- (IBAction)pushConfirmClicked:(id)sender {
+    [Leanplum track:@"Send_push_confirm"];
+}
+
+- (IBAction)pushAlertClicked:(id)sender {
+    [Leanplum track:@"Send_push_alert"];
+}
+
+- (IBAction)pushCenterClicked:(id)sender {
+    [Leanplum track:@"Send_push_center"];
+}
+
+- (IBAction)pushInterstitialClicked:(id)sender {
+    [Leanplum track:@"Send_push_interstitial"];
+}
+
+- (IBAction)pushMuteClicked:(id)sender {
+    [Leanplum track:@"Send_push_mute"];
+}
+
+- (IBAction)pushMuteConfirmClicked:(id)sender {
+    [Leanplum track:@"Send_push_mute_confirm"];
+}
+
+- (IBAction)pushMuteAlertClicked:(id)sender {
+    [Leanplum track:@"Send_push_mute_alert"];
+}
+
+- (IBAction)pushMuteCenterClicked:(id)sender {
+    [Leanplum track:@"Send_push_mute_center"];
+}
+
+- (IBAction)pushMuteInterstitialClicked:(id)sender {
+    [Leanplum track:@"Send_push_mute_interstitial"];
+}
+
+- (IBAction)sendPushTriggeredClicked:(id)sender {
+    [Leanplum track:@"Send_push_triggered"];
+}
+
+- (IBAction)cancelPushTriggeredClicked:(id)sender {
+    [Leanplum track:@"Cancel_push_triggered"];
+}
 
 @end
