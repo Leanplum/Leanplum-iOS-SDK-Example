@@ -51,7 +51,7 @@
                        @"count": @0
                        },
                     @{
-                       @"item" : @"In-app Messages",
+                       @"item" : @"In App Messages",
                        @"count": @0
                        },
                     @{
@@ -64,6 +64,14 @@
                         },
                     @{
                         @"item" : @"Testing",
+                        @"count" : @0
+                        },
+                    @{
+                        @"item" : @"Testing Push",
+                        @"count" : @0
+                        },
+                    @{
+                        @"item" : @"Testing In App",
                         @"count" : @0
                         }
                     ];
@@ -93,35 +101,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    UIViewController* viewController = nil;
-    NSString *identifier;
-    
-    switch (indexPath.row) {
-        case 0:
-            identifier = @"push_notification_view_controller";
-            break;
-        case 1:
-            identifier = @"in_app_messages_view_controller";
-            break;
-        case 2:
-            identifier = @"app_inbox_view_controller";
-            break;
-        case 3:
-            identifier = @"app_inbox_view_controller";
-            break;
-        case 4:
-            identifier = @"testing_view_controller";
-            break;
-        default:
-            break;
-    }
-    viewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
-    if (viewController != nil) {
-        [Leanplum advanceTo:identifier];
-        [self.navigationController pushViewController:viewController animated:YES];
-    }
-}
+    NSString *viewcontrollerName = self.cells[indexPath.row][@"item"];
+    NSString *segueName = [NSString stringWithFormat:@"%@ Segue", viewcontrollerName];
+    [self performSegueWithIdentifier:segueName sender:self];}
 
 @end
 

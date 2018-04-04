@@ -21,6 +21,8 @@
 		07DAAE281E7849A9002A6878 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE271E7849A9002A6878 /* PreviewViewController.m */; };
 		182A60D000B1E0571923C438 /* Pods_Leanplum_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD934A55A04FD177BC74536 /* Pods_Leanplum_iOS_SDK_Example.framework */; };
 		68C9A5B11F143972000DFA1B /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9A5B01F143972000DFA1B /* TestingViewController.m */; };
+		B5E4B90A207539FD0064C0F1 /* TestingPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4B909207539FD0064C0F1 /* TestingPushViewController.m */; };
+		B5E4B90D20753A270064C0F1 /* TestingInAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4B90C20753A270064C0F1 /* TestingInAppViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,10 @@
 		97B08F63A7C696E6E6D7DA7A /* Pods-Leanplum-iOS-SDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; sourceTree = "<group>"; };
 		A5AF6BDC2429709F860CC5FE /* Pods-Leanplum-iOS-SDK-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-SDK-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A49FF11EFC463900F669C3 /* Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configure.h; sourceTree = "<group>"; };
+		B5E4B908207539FD0064C0F1 /* TestingPushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingPushViewController.h; sourceTree = "<group>"; };
+		B5E4B909207539FD0064C0F1 /* TestingPushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingPushViewController.m; sourceTree = "<group>"; };
+		B5E4B90B20753A270064C0F1 /* TestingInAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingInAppViewController.h; sourceTree = "<group>"; };
+		B5E4B90C20753A270064C0F1 /* TestingInAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingInAppViewController.m; sourceTree = "<group>"; };
 		F3889FFB362685E659EF7602 /* Pods-Leanplum-iOS-SDK-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-SDK-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD934A55A04FD177BC74536 /* Pods_Leanplum_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leanplum_iOS_SDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,6 +142,10 @@
 				07DAAE271E7849A9002A6878 /* PreviewViewController.m */,
 				68C9A5AF1F143832000DFA1B /* TestingViewController.h */,
 				68C9A5B01F143972000DFA1B /* TestingViewController.m */,
+				B5E4B908207539FD0064C0F1 /* TestingPushViewController.h */,
+				B5E4B909207539FD0064C0F1 /* TestingPushViewController.m */,
+				B5E4B90B20753A270064C0F1 /* TestingInAppViewController.h */,
+				B5E4B90C20753A270064C0F1 /* TestingInAppViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,7 +220,7 @@
 				KnownAssetTags = (
 					Button,
 				);
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Leanplum;
 				TargetAttributes = {
 					07DAADEE1E78380D002A6878 = {
@@ -308,6 +318,8 @@
 				07DAAE0F1E783AFE002A6878 /* AppDelegate.m in Sources */,
 				07DAADF41E78380D002A6878 /* main.m in Sources */,
 				07DAAE1F1E784959002A6878 /* AppInboxViewController.m in Sources */,
+				B5E4B90D20753A270064C0F1 /* TestingInAppViewController.m in Sources */,
+				B5E4B90A207539FD0064C0F1 /* TestingPushViewController.m in Sources */,
 				07DAAE251E78499B002A6878 /* ABTestViewController.m in Sources */,
 				07DAAE281E7849A9002A6878 /* PreviewViewController.m in Sources */,
 				07DAAE161E784744002A6878 /* Constants.m in Sources */,
@@ -348,15 +360,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -392,15 +412,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -439,7 +467,7 @@
 				);
 				INFOPLIST_FILE = "Leanplum-iOS-SDK-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leanplum.qaapp.2018";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leanplum.qaapp.2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -453,7 +481,7 @@
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
 				INFOPLIST_FILE = "Leanplum-iOS-SDK-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leanplum.qaapp.2018";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leanplum.qaapp.2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
