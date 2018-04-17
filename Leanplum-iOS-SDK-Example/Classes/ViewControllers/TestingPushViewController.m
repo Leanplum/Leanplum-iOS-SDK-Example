@@ -7,7 +7,7 @@
 //
 
 #import "TestingPushViewController.h"
-#import "Leanplum.h"
+#import <Leanplum/Leanplum.h>
 
 @interface TestingPushViewController ()
 
