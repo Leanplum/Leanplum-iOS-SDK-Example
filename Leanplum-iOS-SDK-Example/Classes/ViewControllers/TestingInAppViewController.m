@@ -9,7 +9,6 @@
 #import "TestingInAppViewController.h"
 #import <Leanplum/Leanplum.h>
 
-
 @interface TestingInAppViewController ()
 
 @end
