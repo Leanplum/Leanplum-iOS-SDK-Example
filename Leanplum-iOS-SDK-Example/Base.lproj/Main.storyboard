@@ -271,7 +271,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfX-XL-44j">
                                 <rect key="frame" x="16" y="110" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
+                                <accessibility key="accessibilityConfiguration" identifier="alert" label="alert"/>
                                 <state key="normal" title="ALERT"/>
                                 <connections>
                                     <action selector="alertClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="1jc-XG-LZb"/>
@@ -281,7 +281,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-SH-zEZ">
                                 <rect key="frame" x="16" y="186" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="confirm" label="confirm"/>
                                 <state key="normal" title="CONFIRM"/>
                                 <connections>
                                     <action selector="confirmClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="8lQ-X7-Hpe"/>
@@ -291,7 +291,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5R-13-ISp">
                                 <rect key="frame" x="16" y="224" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="interstitial" label="interstitial"/>
                                 <state key="normal" title="INTERSTITIAL"/>
                                 <connections>
                                     <action selector="interstitialClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="Ukx-ee-SmO"/>
@@ -301,7 +301,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocb-M2-KN0">
                                 <rect key="frame" x="16" y="262" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
+                                <accessibility key="accessibilityConfiguration" identifier="web_interstitial" label="web_interstitial"/>
                                 <state key="normal" title="WEB_INTERSTITIAL"/>
                                 <connections>
                                     <action selector="crash_app:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="LoO-I3-Oj9"/>
@@ -311,7 +311,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5J-zy-u7P">
                                 <rect key="frame" x="16" y="300" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="open_url" label="open_url"/>
                                 <state key="normal" title="OPEN_URL"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="nql-Ew-Mhr"/>
@@ -321,7 +321,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEG-qG-eh4">
                                 <rect key="frame" x="16" y="338" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="banner" label="banner"/>
                                 <state key="normal" title="BANNER"/>
                                 <connections>
                                     <action selector="bannerClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="y4R-fY-5eW"/>
@@ -331,7 +331,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IX-uN-FwA">
                                 <rect key="frame" x="16" y="376" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="rich_interstitial" label="rich_interstitial"/>
                                 <state key="normal" title="RICH_INTERSTITIAL"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="MCd-GS-IBd"/>
@@ -341,7 +341,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgU-w3-5TS">
                                 <rect key="frame" x="16" y="414" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
+                                <accessibility key="accessibilityConfiguration" identifier="star_rating" label="star_rating"/>
                                 <state key="normal" title="STAR_RATING"/>
                                 <connections>
                                     <action selector="crash_app:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="bEh-Er-tk5"/>
@@ -351,7 +351,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxt-Wd-ruN">
                                 <rect key="frame" x="16" y="452" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="chain_to_existing" label="chain_to_existing"/>
                                 <state key="normal" title="CHAIN_TO_EXISTING"/>
                                 <connections>
                                     <action selector="chainToExistingClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="7oJ-yi-H6t"/>
@@ -361,7 +361,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-E4-AzR">
                                 <rect key="frame" x="16" y="490" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="chain_to_new" label="chain_to_new"/>
                                 <state key="normal" title="CHAIN_TO_NEW"/>
                                 <connections>
                                     <action selector="chainToNewClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="7hj-IS-fah"/>
@@ -371,7 +371,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwg-8Y-OeR">
                                 <rect key="frame" x="16" y="528" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="limit_session" label="limit_session"/>
                                 <state key="normal" title="LIMIT_SESSION"/>
                                 <connections>
                                     <action selector="limitSessionClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="vqb-Em-KdE"/>
@@ -381,7 +381,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLG-cE-shX">
                                 <rect key="frame" x="16" y="566" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="limit_lifetime" label="limit_lifetime"/>
                                 <state key="normal" title="LIMIT_LIFETIME"/>
                                 <connections>
                                     <action selector="limitLifetimeClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="jQ0-9v-rMP"/>
@@ -391,7 +391,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JZ-71-z1c">
                                 <rect key="frame" x="16" y="148" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="center_popup" label="center_popup"/>
                                 <state key="normal" title="CENTER_POPUP"/>
                                 <connections>
                                     <action selector="centerPopupClicked:" destination="ZKX-Vs-Obu" eventType="touchUpInside" id="ZPs-et-Eu1"/>
@@ -409,7 +409,6 @@
         <!--Test View Controller-->
         <scene sceneID="HQ6-I0-fNH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kp6-vF-y6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ab_test_view_controller" id="E3L-RU-jLE" customClass="ABTestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aFb-cK-6zC"/>
@@ -421,6 +420,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kp6-vF-y6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2041" y="1407"/>
         </scene>
@@ -439,7 +439,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbd-ZI-rAI">
                                 <rect key="frame" x="16" y="110" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push" label="push"/>
                                 <state key="normal" title="PUSH"/>
                                 <connections>
                                     <action selector="crash_app:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="OXn-2c-exT"/>
@@ -449,7 +449,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVV-fr-5Cy">
                                 <rect key="frame" x="16" y="186" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_alert" label="push_alert"/>
                                 <state key="normal" title="PUSH_ALERT"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="CaH-Gs-afI"/>
@@ -459,7 +459,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-cX-4hb">
                                 <rect key="frame" x="16" y="224" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_center" label="push_center"/>
                                 <state key="normal" title="PUSH_CENTER"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="0FQ-Ny-QAn"/>
@@ -469,7 +469,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIu-zb-Kie">
                                 <rect key="frame" x="16" y="262" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_interstitial" label="push_interstitial"/>
                                 <state key="normal" title="PUSH_INTERSTITIAL"/>
                                 <connections>
                                     <action selector="crash_app:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="V7N-zi-9Eg"/>
@@ -479,7 +479,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poB-JI-k7K">
                                 <rect key="frame" x="16" y="300" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_mute" label="push_mute"/>
                                 <state key="normal" title="PUSH_MUTE"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="ZRA-2a-1xC"/>
@@ -489,7 +489,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="209-2n-dqv">
                                 <rect key="frame" x="16" y="338" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_mute_confirm" label="push_mute_confirm"/>
                                 <state key="normal" title="PUSH_MUTE_CONFIRM"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="hMY-LT-nP7"/>
@@ -499,7 +499,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQS-UA-h7R">
                                 <rect key="frame" x="16" y="376" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_mute_alert" label="push_mute_alert"/>
                                 <state key="normal" title="PUSH_MUTE_ALERT"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="3wB-NA-KZN"/>
@@ -509,7 +509,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylf-cw-9ZB">
                                 <rect key="frame" x="16" y="414" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="crash_app" label="crash_app"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_mute_center" label="push_mute_center"/>
                                 <state key="normal" title="PUSH_MUTE_CENTER"/>
                                 <connections>
                                     <action selector="crash_app:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="Snt-Mr-4Cl"/>
@@ -519,7 +519,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsC-m0-VPL">
                                 <rect key="frame" x="16" y="452" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_mute_interstitial" label="push_mute_interstitial"/>
                                 <state key="normal" title="PUSH_MUTE_INTERSTITIAL"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="ZuM-Eb-huh"/>
@@ -529,7 +529,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9V-Si-aA6">
                                 <rect key="frame" x="16" y="490" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <string key="identifier" base64-UTF8="YES">
+c2VuZBBfcHVzaF90cmlnZ2VyZWQ
+</string>
+                                    <string key="label" base64-UTF8="YES">
+c2VuZBBfcHVzaF90cmlnZ2VyZWQ
+</string>
+                                </accessibility>
                                 <state key="normal" title="SEND_PUSH_TRIGGERED"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="u6V-Lz-XFm"/>
@@ -539,7 +546,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5o-ST-jOa">
                                 <rect key="frame" x="16" y="528" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <string key="identifier" base64-UTF8="YES">
+Y2FuY2VsEF9wdXNoX3RyaWdnZXJlZA
+</string>
+                                    <string key="label" base64-UTF8="YES">
+Y2FuY2VsEF9wdXNoX3RyaWdnZXJlZA
+</string>
+                                </accessibility>
                                 <state key="normal" title="CANCEL_PUSH_TRIGGERED"/>
                                 <connections>
                                     <action selector="cancelPushTriggeredClicked:" destination="Irm-8t-rK2" eventType="touchUpInside" id="rZ0-YM-Bfx"/>
@@ -549,7 +563,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXx-Ff-Lsz">
                                 <rect key="frame" x="16" y="148" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="load_test" label="load_test"/>
+                                <accessibility key="accessibilityConfiguration" identifier="push_confirm" label="push_confirm"/>
                                 <state key="normal" title="PUSH_CONFIRM"/>
                                 <connections>
                                     <action selector="load_test:" destination="hJP-Ff-9jp" eventType="touchUpInside" id="vpe-QS-FLY"/>
