@@ -16,7 +16,7 @@
 #define LP_PRODUCTION_KEY @"prod_A1c7DfHO6XTo2BRwzhkkXKFJ6oaPtoMnRA9xpPSlx74"
 #define LP_DEVELOPMENT_KEY @"dev_Bx8i3Bbz1OJBTBAu63NIifr3UwWqUBU5OhHtywo58RY"
 
-#define LP_API_HOST_NAME @"0.0.0.0:3000"
+#define LP_API_HOST_NAME @"10.0.2.2:3000"
 #define LP_API_SSL false
 
 #define LP_SOCKET_HOST_NAME @"dev.leanplum.com"
