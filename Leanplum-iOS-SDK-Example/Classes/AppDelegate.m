@@ -31,11 +31,6 @@
 
 static NSString *POST_URL = @"https://guarded-shore-40772.herokuapp.com/notification";
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self configureLeanplum];
-    return YES;
-}
-
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo
 fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
@@ -139,24 +134,56 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
     [Leanplum start];
 }
 
-- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier
-forRemoteNotification:(NSDictionary *)notification
-  completionHandler:(void (^)())completionHandler
-{
-    NSLog(@"Handle remote action %@", identifier);
-    [Leanplum handleActionWithIdentifier:identifier
-                   forRemoteNotification:notification
-                       completionHandler:completionHandler];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    id notificationCenterClass = NSClassFromString(@"UNUserNotificationCenter");
+    [self configureLeanplum];
+    if (notificationCenterClass) {
+        // iOS 10.
+        SEL selector = NSSelectorFromString(@"currentNotificationCenter");
+        id notificationCenter =
+        ((id (*)(id, SEL)) [notificationCenterClass methodForSelector:selector])
+        (notificationCenterClass, selector);
+        if (notificationCenter) {
+            selector = NSSelectorFromString(@"requestAuthorizationWithOptions:completionHandler:");
+            IMP method = [notificationCenter methodForSelector:selector];
+            void (*func)(id, SEL, unsigned long long, void (^)(BOOL, NSError *__nullable)) =
+            (void *) method;
+            func(notificationCenter, selector,
+                 0b111, /* badges, sounds, alerts */
+                 ^(BOOL granted, NSError *__nullable error) {
+                     if (error) {
+                         NSLog(@"Leanplum: Failed to request authorization for user "
+                               "notifications: %@", error);
+                     }
+                 });
+        }
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    } else if ([[UIApplication sharedApplication] respondsToSelector:
+                @selector(registerUserNotificationSettings:)]) {
+        // iOS 8-9.
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings
+                                                settingsForTypes:UIUserNotificationTypeAlert |
+                                                UIUserNotificationTypeBadge |
+                                                UIUserNotificationTypeSound categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    } else {
+        // iOS 7 and below.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+#pragma clang diagnostic pop
+         UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge];
+    }
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings
+                                            settingsForTypes:UIUserNotificationTypeAlert |
+                                            UIUserNotificationTypeBadge |
+                                            UIUserNotificationTypeSound categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    return YES;
 }
 
-- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier
-forLocalNotification:(UILocalNotification *)notification
-  completionHandler:(void (^)())completionHandler
-{
-    NSLog(@"Handle local action %@", identifier);
-    [Leanplum handleActionWithIdentifier:identifier
-                    forLocalNotification:notification
-                       completionHandler:completionHandler];
-}
 
 @end
