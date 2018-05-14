@@ -36,6 +36,8 @@ didReceiveRemoteNotification:(NSDictionary *)userInfo
 fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
     NSString *messageTitle = [[userInfo objectForKey:@"aps"] objectForKey:@"alert"];
+    NSString *uuid = [userInfo objectForKey:@"uuid"];
+    NSString *os = [userInfo objectForKey:@"os"];
     NSString *action = [userInfo objectForKey:@"action"];
     NSString *openActionType = [[userInfo objectForKey:@"_lpx"] objectForKey:@"__name__"] ?:
     [NSNull null];
@@ -50,10 +52,10 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
         return;
     }
     
-
-    
     LPNotification *notification = [[LPNotification alloc] initWithAction:action
                                                messageTitle:messageTitle
+                                                os:os
+                                                uuid:uuid
                                              openActionType:openActionType
                                               openActionUrl:openActionUrl];
     completionHandler = completionHandler;
@@ -81,6 +83,8 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
     NSDictionary *mapData =
     @{ @"action" : notification.action,
        @"messageTitle" : notification.messageTitle,
+       @"os" : notification.os,
+       @"uuid" : notification.uuid,
        @"openActionType" : notification.openActionType,
        @"openActionUrl" : notification.openActionUrl };
     NSData *postData = [NSJSONSerialization dataWithJSONObject:mapData options:0 error:&error];

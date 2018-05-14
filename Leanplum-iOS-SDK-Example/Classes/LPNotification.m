@@ -12,6 +12,8 @@
 
 - (instancetype)initWithAction:(NSString *)action
                   messageTitle:(NSString *)messageTitle
+                            os:(NSString *)os
+                          uuid:(NSString *)uuid
                 openActionType:(NSString *)openActionType
                  openActionUrl:(NSString *)openActionUrl;
 {
@@ -20,6 +22,8 @@
         self.date = [NSDate date];
         self.action = action;
         self.messageTitle = messageTitle;
+        self.os = os;
+        self.uuid = uuid;
         self.openActionType = openActionType;
         self.openActionUrl = openActionUrl;
         self.deliveryReceiptSubmitted = kReceiptDeliveredTypeSending;
