@@ -1,14 +1,10 @@
-//
-//  Notification.m
-//  LeanplumNotificationReceiver
-//
 //  Created by Sayaan on 5/8/18.
 //  Copyright © 2016 Leanplum. All rights reserved.
 //
 
-#import "LPNotification.h"
+#import "LeanplumExampleTestNotification.h"
 
-@implementation LPNotification
+@implementation LeanplumExampleTestNotification
 
 - (instancetype)initWithAction:(NSString *)action
                   messageTitle:(NSString *)messageTitle

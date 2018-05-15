@@ -17,12 +17,12 @@
 #import "AppDelegate.h"
 #import <Leanplum/Leanplum.h>
 #import "Configure.h"
-#import "LPNotification.h"
+#import "LeanplumExampleTestNotification.h"
 
 @interface AppDelegate ()
 
 @property NSURLSession *session;
-@property LPNotification *notification;
+@property LeanplumExampleTestNotification *notification;
 @property (nonatomic, copy) void (^completionHandler)(UIBackgroundFetchResult fetchResult);
 
 @end
@@ -52,7 +52,7 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
         return;
     }
     
-    LPNotification *notification = [[LPNotification alloc] initWithAction:action
+    LeanplumExampleTestNotification *notification = [[LeanplumExampleTestNotification alloc] initWithAction:action
                                                messageTitle:messageTitle
                                                 os:os
                                                 uuid:uuid
@@ -66,7 +66,7 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
     [self postNotificationReceipt:notification];
 }
 
-- (void)postNotificationReceipt:(LPNotification *)notification
+- (void)postNotificationReceipt:(LeanplumExampleTestNotification *)notification
 {
     NSError *error;
     
@@ -139,9 +139,19 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    id notificationCenterClass = NSClassFromString(@"UNUserNotificationCenter");
     [self configureLeanplum];
+    [self registerForPushNotifications:application];
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings
+                                            settingsForTypes:UIUserNotificationTypeAlert |
+                                            UIUserNotificationTypeBadge |
+                                            UIUserNotificationTypeSound categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    return YES;
+}
+
+- (void) registerForPushNotifications:(UIApplication *)application {
+    id notificationCenterClass = NSClassFromString(@"UNUserNotificationCenter");
     if (notificationCenterClass) {
         // iOS 10.
         SEL selector = NSSelectorFromString(@"currentNotificationCenter");
@@ -180,14 +190,6 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 #pragma clang diagnostic pop
          UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge];
     }
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings
-                                            settingsForTypes:UIUserNotificationTypeAlert |
-                                            UIUserNotificationTypeBadge |
-                                            UIUserNotificationTypeSound categories:nil];
-    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
-    return YES;
 }
-
 
 @end

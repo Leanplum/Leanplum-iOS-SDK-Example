@@ -20,6 +20,7 @@
 		07DAAE251E78499B002A6878 /* ABTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE241E78499B002A6878 /* ABTestViewController.m */; };
 		07DAAE281E7849A9002A6878 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE271E7849A9002A6878 /* PreviewViewController.m */; };
 		182A60D000B1E0571923C438 /* Pods_Leanplum_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD934A55A04FD177BC74536 /* Pods_Leanplum_iOS_SDK_Example.framework */; };
+		68314C9B20AA478B003C0DAF /* LeanplumExampleTestNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */; };
 		68C9A5B11F143972000DFA1B /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9A5B01F143972000DFA1B /* TestingViewController.m */; };
 		68DC839920A20EC500708F92 /* LPNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DC839820A20EC500708F92 /* LPNotification.m */; };
 		B5E4B90A207539FD0064C0F1 /* TestingPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4B909207539FD0064C0F1 /* TestingPushViewController.m */; };
@@ -50,6 +51,8 @@
 		07DAAE261E7849A9002A6878 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
 		07DAAE271E7849A9002A6878 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
 		682C0D5520A3A74D004649A4 /* Leanplum-iOS-SDK-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Leanplum-iOS-SDK-Example.entitlements"; sourceTree = "<group>"; };
+		68314C9920AA4683003C0DAF /* LeanplumExampleTestNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeanplumExampleTestNotification.h; sourceTree = "<group>"; };
+		68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeanplumExampleTestNotification.m; sourceTree = "<group>"; };
 		68C9A5AF1F143832000DFA1B /* TestingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingViewController.h; sourceTree = "<group>"; };
 		68C9A5B01F143972000DFA1B /* TestingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; };
 		68DC839820A20EC500708F92 /* LPNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPNotification.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				68DC839A20A26A1600708F92 /* LPNotification.h */,
 				68DC839820A20EC500708F92 /* LPNotification.m */,
 				07DAAE0C1E783AFE002A6878 /* ViewControllers */,
+				68314C9920AA4683003C0DAF /* LeanplumExampleTestNotification.h */,
+				68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				07DAAE0F1E783AFE002A6878 /* AppDelegate.m in Sources */,
 				07DAADF41E78380D002A6878 /* main.m in Sources */,
 				07DAAE1F1E784959002A6878 /* AppInboxViewController.m in Sources */,
+				68314C9B20AA478B003C0DAF /* LeanplumExampleTestNotification.m in Sources */,
 				B5E4B90D20753A270064C0F1 /* TestingInAppViewController.m in Sources */,
 				B5E4B90A207539FD0064C0F1 /* TestingPushViewController.m in Sources */,
 				07DAAE251E78499B002A6878 /* ABTestViewController.m in Sources */,

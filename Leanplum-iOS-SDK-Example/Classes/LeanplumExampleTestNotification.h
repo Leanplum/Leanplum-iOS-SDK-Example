@@ -1,14 +1,10 @@
-//
-//  Notification.h
-//  LeanplumNotificationReceiver
-//
 //  Created by Sayaan on 5/8/18.
-//  Copyright © 2016 Leanplum. All rights reserved.
+//  Copyright © 2018 Leanplum. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface LPNotification : NSObject
+@interface LeanplumExampleTestNotification : NSObject
 
 typedef NS_ENUM(NSUInteger, ReceiptDeliveredType) {
     kReceiptDeliveredTypeSending,
@@ -27,10 +23,10 @@ typedef NS_ENUM(NSUInteger, ReceiptDeliveredType) {
 @property NSError *error;
 
 -(instancetype)initWithAction:(NSString *)action
-                  messageTitle:(NSString *)messageTitle
+                 messageTitle:(NSString *)messageTitle
                            os:(NSString *)os
                          uuid:(NSString *)uuid
-                openActionType:(NSString *)openActionType
-                 openActionUrl:(NSString *)openActionUrl;
+               openActionType:(NSString *)openActionType
+                openActionUrl:(NSString *)openActionUrl;
 
 @end
