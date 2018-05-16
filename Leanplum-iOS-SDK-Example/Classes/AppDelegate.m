@@ -29,7 +29,7 @@
 
 @implementation AppDelegate
 
-static NSString *POST_URL = @"https://guarded-shore-40772.herokuapp.com/notification";
+static NSString *POST_URL = @"insert proxy url";
 
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo
