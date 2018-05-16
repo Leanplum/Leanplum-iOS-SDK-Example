@@ -21,8 +21,7 @@
 		07DAAE281E7849A9002A6878 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE271E7849A9002A6878 /* PreviewViewController.m */; };
 		182A60D000B1E0571923C438 /* Pods_Leanplum_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD934A55A04FD177BC74536 /* Pods_Leanplum_iOS_SDK_Example.framework */; };
 		68314C9B20AA478B003C0DAF /* LeanplumExampleTestNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */; };
-		68C9A5B11F143972000DFA1B /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9A5B01F143972000DFA1B /* TestingViewController.m */; };
-		68DC839920A20EC500708F92 /* LPNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DC839820A20EC500708F92 /* LPNotification.m */; };
+		68C9A5B11F143972000DFA1B /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9A5B01F143972000DFA1B /* TestingViewController.m */; 
 		B5E4B90A207539FD0064C0F1 /* TestingPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4B909207539FD0064C0F1 /* TestingPushViewController.m */; };
 		B5E4B90D20753A270064C0F1 /* TestingInAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4B90C20753A270064C0F1 /* TestingInAppViewController.m */; };
 /* End PBXBuildFile section */
@@ -54,9 +53,7 @@
 		68314C9920AA4683003C0DAF /* LeanplumExampleTestNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeanplumExampleTestNotification.h; sourceTree = "<group>"; };
 		68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeanplumExampleTestNotification.m; sourceTree = "<group>"; };
 		68C9A5AF1F143832000DFA1B /* TestingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingViewController.h; sourceTree = "<group>"; };
-		68C9A5B01F143972000DFA1B /* TestingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; };
-		68DC839820A20EC500708F92 /* LPNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPNotification.m; sourceTree = "<group>"; };
-		68DC839A20A26A1600708F92 /* LPNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPNotification.h; sourceTree = "<group>"; };
+		68C9A5B01F143972000DFA1B /* TestingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; 
 		6BA601E55706F3BB005C5C1B /* Pods-Leanplum-iOS-SDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; sourceTree = "<group>"; };
 		85FA4B8F8C062203CB2D40D9 /* Pods_Leanplum-iOS-SDK-Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Leanplum-iOS-SDK-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B08F63A7C696E6E6D7DA7A /* Pods-Leanplum-iOS-SDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,8 +125,6 @@
 				07DAAE121E78468D002A6878 /* Utilities */,
 				07DAAE0A1E783AFE002A6878 /* AppDelegate.h */,
 				07DAAE0B1E783AFE002A6878 /* AppDelegate.m */,
-				68DC839A20A26A1600708F92 /* LPNotification.h */,
-				68DC839820A20EC500708F92 /* LPNotification.m */,
 				07DAAE0C1E783AFE002A6878 /* ViewControllers */,
 				68314C9920AA4683003C0DAF /* LeanplumExampleTestNotification.h */,
 				68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */,
@@ -342,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DAAE191E784905002A6878 /* FeaturesViewController.m in Sources */,
-				68DC839920A20EC500708F92 /* LPNotification.m in Sources */,
 				07DAAE0F1E783AFE002A6878 /* AppDelegate.m in Sources */,
 				07DAADF41E78380D002A6878 /* main.m in Sources */,
 				07DAAE1F1E784959002A6878 /* AppInboxViewController.m in Sources */,
