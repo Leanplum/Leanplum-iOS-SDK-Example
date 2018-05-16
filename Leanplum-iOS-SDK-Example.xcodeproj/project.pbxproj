@@ -20,6 +20,7 @@
 		07DAAE251E78499B002A6878 /* ABTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE241E78499B002A6878 /* ABTestViewController.m */; };
 		07DAAE281E7849A9002A6878 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAAE271E7849A9002A6878 /* PreviewViewController.m */; };
 		182A60D000B1E0571923C438 /* Pods_Leanplum_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD934A55A04FD177BC74536 /* Pods_Leanplum_iOS_SDK_Example.framework */; };
+		68314C9B20AA478B003C0DAF /* LeanplumExampleTestNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */; };
 		68C9A5B11F143972000DFA1B /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9A5B01F143972000DFA1B /* TestingViewController.m */; };
 		B5E4B90A207539FD0064C0F1 /* TestingPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4B909207539FD0064C0F1 /* TestingPushViewController.m */; };
 		B5E4B90D20753A270064C0F1 /* TestingInAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4B90C20753A270064C0F1 /* TestingInAppViewController.m */; };
@@ -48,6 +49,9 @@
 		07DAAE241E78499B002A6878 /* ABTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABTestViewController.m; sourceTree = "<group>"; };
 		07DAAE261E7849A9002A6878 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
 		07DAAE271E7849A9002A6878 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		682C0D5520A3A74D004649A4 /* Leanplum-iOS-SDK-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Leanplum-iOS-SDK-Example.entitlements"; sourceTree = "<group>"; };
+		68314C9920AA4683003C0DAF /* LeanplumExampleTestNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeanplumExampleTestNotification.h; sourceTree = "<group>"; };
+		68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeanplumExampleTestNotification.m; sourceTree = "<group>"; };
 		68C9A5AF1F143832000DFA1B /* TestingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingViewController.h; sourceTree = "<group>"; };
 		68C9A5B01F143972000DFA1B /* TestingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; };
 		6BA601E55706F3BB005C5C1B /* Pods-Leanplum-iOS-SDK-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 		07DAADF11E78380D002A6878 /* Leanplum-iOS-SDK-Example */ = {
 			isa = PBXGroup;
 			children = (
+				682C0D5520A3A74D004649A4 /* Leanplum-iOS-SDK-Example.entitlements */,
 				B5A49FF11EFC463900F669C3 /* Configure.h */,
 				07DAAE031E78380D002A6878 /* Info.plist */,
 				07DAADFE1E78380D002A6878 /* Assets.xcassets */,
@@ -120,6 +125,8 @@
 				07DAAE121E78468D002A6878 /* Utilities */,
 				07DAAE0A1E783AFE002A6878 /* AppDelegate.h */,
 				07DAAE0B1E783AFE002A6878 /* AppDelegate.m */,
+				68314C9920AA4683003C0DAF /* LeanplumExampleTestNotification.h */,
+				68314C9A20AA478B003C0DAF /* LeanplumExampleTestNotification.m */,
 				07DAAE0C1E783AFE002A6878 /* ViewControllers */,
 			);
 			path = Classes;
@@ -227,6 +234,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4XLWYATZ5P;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -268,13 +280,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leanplum-iOS-SDK-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B540528076A194C578D1B4C7 /* [CP] Copy Pods Resources */ = {
@@ -298,9 +313,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Leanplum-iOS-SDK-Example/Pods-Leanplum-iOS-SDK-Example-frameworks.sh",
+				"${PODS_ROOT}/Leanplum-iOS-Location/LeanplumLocation.framework",
+				"${PODS_ROOT}/Leanplum-iOS-SDK/Leanplum.framework",
+				"${PODS_ROOT}/Leanplum-iOS-UIEditor/LeanplumUIEditor.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanplumLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Leanplum.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanplumUIEditor.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -318,6 +340,7 @@
 				07DAAE0F1E783AFE002A6878 /* AppDelegate.m in Sources */,
 				07DAADF41E78380D002A6878 /* main.m in Sources */,
 				07DAAE1F1E784959002A6878 /* AppInboxViewController.m in Sources */,
+				68314C9B20AA478B003C0DAF /* LeanplumExampleTestNotification.m in Sources */,
 				B5E4B90D20753A270064C0F1 /* TestingInAppViewController.m in Sources */,
 				B5E4B90A207539FD0064C0F1 /* TestingPushViewController.m in Sources */,
 				07DAAE251E78499B002A6878 /* ABTestViewController.m in Sources */,
@@ -459,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Leanplum-iOS-SDK-Example/Leanplum-iOS-SDK-Example.entitlements";
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -478,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Leanplum-iOS-SDK-Example/Leanplum-iOS-SDK-Example.entitlements";
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
 				INFOPLIST_FILE = "Leanplum-iOS-SDK-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
