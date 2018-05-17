@@ -141,16 +141,17 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self configureLeanplum];
     [self registerForPushNotifications:application];
+    return YES;
+}
+
+- (void) registerForPushNotifications:(UIApplication *)application {
     UIUserNotificationSettings *settings = [UIUserNotificationSettings
                                             settingsForTypes:UIUserNotificationTypeAlert |
                                             UIUserNotificationTypeBadge |
                                             UIUserNotificationTypeSound categories:nil];
     [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     [[UIApplication sharedApplication] registerForRemoteNotifications];
-    return YES;
-}
-
-- (void) registerForPushNotifications:(UIApplication *)application {
+    
     id notificationCenterClass = NSClassFromString(@"UNUserNotificationCenter");
     if (notificationCenterClass) {
         // iOS 10.
